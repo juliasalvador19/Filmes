@@ -18,6 +18,7 @@
 - CSS
 - Bootstrap
 - PHP
+- JavaScript
 
 ## Contato
 

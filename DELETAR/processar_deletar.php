@@ -16,6 +16,6 @@ if(!empty($id)){
     }
 
 } else{
-    $_SESSION['msg'] = "<em style='color: red;'> &nbsp;&nbsp; Necesário selecionar um filme!</em>";
+    $_SESSION['msg'] = "<em style='color: red;'> &nbsp;&nbsp; Necessário selecionar um filme!</em>";
     header("Location: ../CONSULTAR/consultar_filmes.php");
 }

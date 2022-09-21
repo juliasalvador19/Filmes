@@ -13,8 +13,7 @@
     <title>Consultar filmes</title>
 
     <!-- Links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style_consultar.css">
 </head>
 <body>
@@ -84,7 +83,7 @@
                             <a class='btn btn-outline-dark btn-sm' href='../ALTERAR/alterar_filmes.php?id=" . $row_filme['codigo'] . "'>Alterar</a>    
                         </td>
                         <td>
-                            <a class='btn btn-outline-dark btn-sm' href='../DELETAR/processar_deletar.php?id=" . $row_filme['codigo'] . "'>Deletar</a>    
+                                <a class='btn btn-outline-dark btn-sm' href='../DELETAR/processar_deletar.php?id=" . $row_filme['codigo'] . "' data-confirm='Tem certeza de que deseja deletar o registro?'>Deletar</a>    
                         </td>
                     </tr>";
                 }
@@ -120,6 +119,10 @@
 
             echo "<a class='btn btn-outline-dark btn-sm' href='consultar_filmes.php?pagina=$quantidade_pagina'>Última</a>";
         ?>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <script src="../JS/personalizado.js"></script>
     </div>
 </body>
 </html>
