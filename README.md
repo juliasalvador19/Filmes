@@ -9,8 +9,6 @@
 > Editar filmes
 ![preview](./PREVIEW/preview_alterar.png)
 
-[Clique aqui para acessar](https://juliasalvador19.github.io/Filmes/)
-
 ## Tecnologias
 
 - HTML
